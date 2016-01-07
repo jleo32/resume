@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Justin \textsc{Leo}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Address:} & 1137 S Clinton St, Baltimore, MD, 21224 \\
+\textsc{Phone:} & 443 852 6232\\
+\textsc{email:} & \href{mailto:justin.s.leo32@gmail.com}{justin.s.leo32@gmail.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}
+\textsc{Dec} 2013 & Bachelor of Science, \textbf{The University of Maryland}, College Park\\
+& Major: Computer Science\\
+&\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Jan 2015 - Jan 2016} & Software Engineer at \textsc{BTS Software Solutions, Inc.}, Columbia, MD \\
+& \footnotesize{- Built an authentication and authorization library in Java utilizing OpenLDAP to mediate users roles, permissions, and abilities within the system}\\
+& \footnotesize{- Created a fake CASPORT server to mimic authentication between the server and any given client}\\
+& \footnotesize{- Helped convert a Django application from using raw SQL strings to SQLAlchemy to allow for a more robust and flexible query mode}\\
+& \footnotesize{- Created a singe page web application with Angular, Bootstrap, and Node.js that allows users to search published meta data from a desktop client}\\
+& \footnotesize{- Created a RESTful server to facilitate authentication, search and store meta data in ElasticSearch, and run necessary background jobs with Django Rest Framework}\\
+& \footnotesize{- Added features and fixed bugs in several Cordova based mobile applications that utilized an Angular web interface}\\
+& \footnotesize{\textbf{Technologies}: Java, JRuby, Ruby on Rails, Javascript, CSS, HTML, MongoDB, Git, Coffeescript }\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{May 2013 - Jan 2015} & Software Engineer at \textsc{42six, Inc Computer Sciences Corporation}, Columbia, MD \\
+& \footnotesize{- Transitioned a large scale application designed for a server to a laptop based platform for mobile use}\\
+& \footnotesize{- Added the use of MongoDB to a big data, cloud application from the previous Apache Accumulo database}\\
+& \footnotesize{- Continually work to add new features and fix existing issues for a Ruby on Rails cloud application}\\
+& \footnotesize{- Learned agile software development through scrum and how to practically apply it in the progress of a software product}\\
+& \footnotesize{\textbf{Technologies}: Java, AngularJS, CSS , HTML, Python, Django, LDAP, Git, Postgres, Javascript, Ruby}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+Robert H. Smith School of Business TA, BMGT 407, Senior Information System Projects\\
+Director’s Advisory Council for the University Career Center and The President’s Promise\\
+UMD Cyber Security Club\\
+College of Mathematical and Natural Science Ambassadors\\
+Department of Computer Science Daemon Ambassadors\\
+Sigma Phi Epsilon Fraternity\\
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
